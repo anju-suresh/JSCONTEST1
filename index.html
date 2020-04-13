@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="percent.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <h1>Progress Card Generator</h1> 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-3"></div>
+            <div class="col col-12 col-sm-6">
+                <table class="table table-borderless" id="table">
+                    <tr>
+                        <td class="font-weight-borderless">Student Name:</td>
+                        <td><input type="text" class= "form-control" id=nam></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-borderless">Class:</td>
+                        <td><input type="text" class= "form-control" id=cls></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-borderless">Roll Number:</td>
+                        <td><input type="text" class= "form-control" id=num></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-borderless"> Mark obtained in subject-1:</td>
+                        <td><input type="number" class= "form-control" id="mark1"> /100</td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-borderless">Mark obtained in subject-2:</td>
+                        <td><input type="number" class= "form-control" id="mark2"> /100</td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-borderless">Mark obtained in subject-3:</td>
+                        <td><input type="number" class= "form-control" id="mark3"> /100</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button"  class= "form-control btn btn-info" value="Genarate Card" id="gencard" onclick="calcPercent();"> </td>
+                    </tr>
+                </table>
+                <table class="table table-borderless">
+                    <tr>
+                        <td>
+                            <div class="cards">
+                                <div class="card" style="width:400px">
+                                    <div class="card-body">
+                                      <h3 class="card-title">certificate of excellence</h4>
+                                      <p class="card-text" id="one">The Percentage obtained by your ward</p>
+                                    </div>
+                                    <p id="result"></p>    
+                                  </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-sm-3"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

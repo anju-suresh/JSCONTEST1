@@ -39,7 +39,7 @@ function calcPercent(){
     
     document.getElementById("h").innerText="certificate of excellence";
     document.getElementById("one").innerHTML="The Percentage obtained by your ward "+name+" of class "+clas+" has scored";
-    document.getElementById("result").innerHTML=persent;
+    document.getElementById("result").innerHTML=persent +"%";
 
 }
         

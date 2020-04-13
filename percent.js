@@ -6,8 +6,16 @@ function calcPercent(){
    var mark1=parseInt(document.getElementById("mark1").value);
    var mark2=parseInt(document.getElementById("mark2").value);
    var mark3=parseInt(document.getElementById("mark3").value);
+    //   var x=  document.getElementById("disp");
+    //   $("x").show();
+   document.getElementById("disp").style.display = "block";
 //    var y=document.getElementsByClassName("cards");
 //    y.setAttribute("hidden","true");
+    // if (x.style.display === "none") {
+    //      x.style.display = "block";
+    // }else {
+    //     x.style.display = "none";
+    //  }
       if(isNaN(mark1)||isNaN(mark2)||isNaN(mark3))
      {
         persent="Can not find the persentage"
@@ -28,6 +36,8 @@ function calcPercent(){
         
         
     }
+    
+    document.getElementById("h").innerText="certificate of excellence";
     document.getElementById("one").innerHTML="The Percentage obtained by your ward "+name+" of class "+clas+" has scored";
     document.getElementById("result").innerHTML=persent;
 
